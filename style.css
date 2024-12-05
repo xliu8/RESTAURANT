@@ -1,0 +1,324 @@
+.bg-image {
+  position: relative;
+  min-height: 100vh;
+  background: url("../Restaurant/img/bg.jpg") center center / cover no-repeat;
+  z-index: -1;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.logo {
+  z-index: 3;
+}
+
+.navigation {
+  margin-top: 10rem;
+  padding-top: 10rem;
+}
+
+.slogan1 {
+  font-family: "Dancing Script", cursive;
+}
+
+.slogan2 {
+  font-family: "Anton", sans-serif;
+  font-size: 100px;
+  margin-bottom: -50px;
+  color: rgba(255, 255, 255, 0.25);
+}
+
+.footer {
+  background-color: rgb(64, 64, 64);
+  width: 100%;
+  bottom: 0;
+  z-index: 3;
+}
+
+.foot-logo,
+.follow-us {
+  margin-bottom: 20px;
+  padding-top: 20px;
+}
+
+.address {
+  letter-spacing: 2px;
+}
+
+.menu {
+  width: 100%;
+  max-width: 60%; /* or the width of your choice */
+  margin: 0 auto;
+  padding: 0;
+  list-style-type: none;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px; /* space between items */
+  font-family: "Dancing Script", cursive;
+  color: white;
+  letter-spacing: 3px;
+  font-size: 30px;
+}
+
+.menu-item-name {
+  font-weight: bold; /* or the style of your choice */
+}
+
+.price {
+  text-align: right;
+  color: orange;
+  white-space: nowrap; /* keeps the price in one line */
+  font-weight: bold;
+  font-family: "Dancing Script", cursive;
+  text-align: left;
+  margin-top: -10px;
+}
+
+.price:not(:last-child) {
+  margin-bottom: 4px; /* space between half and full prices */
+}
+
+.button {
+  background-color: orange;
+  border-radius: 4px;
+  border-style: none;
+  font-size: 20px;
+  padding: 15px 32px;
+}
+
+.background-c {
+  background-color: rgb(64, 64, 64);
+  z-index: -1;
+}
+
+.nav,
+.nav-bar {
+  margin-top: 0.6rem;
+}
+
+.search {
+  background-color: rgb(64, 64, 64);
+  padding-top: 25px;
+  padding-left: 15px;
+}
+
+.search form {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.form-input,
+.form-select {
+  height: 48px;
+  border-radius: 6px;
+  border: 2px solid orange;
+  background: rgb(64, 64, 64);
+  color: white;
+}
+
+::placeholder {
+  color: white;
+}
+
+.submit-btn {
+  height: 48px;
+  padding: 1px 24px;
+  border-radius: 6px;
+  background: orange;
+  color: white;
+}
+
+.food_title {
+  font-size: 28px; /* Adjust as needed */
+  color: white; /* Adjust as needed */
+  font-family: "Dancing Script", cursive;
+  margin-bottom: -2px;
+}
+
+.all_menu {
+  padding-top: 30px;
+}
+.menu_post {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.menu_post::after {
+  content: "";
+  flex: auto;
+}
+
+.menu_item {
+  flex: 0 0 calc(50% - 20px);
+  margin: 10px;
+}
+
+.menu_item:last-child {
+  flex: 0 0 calc(50% - 20px);
+}
+
+.menu_content {
+  line-height: 1.2;
+  color: LightGray;
+  font-size: 14px;
+}
+
+.detail_title {
+  font-size: 50px;
+  text-align: left;
+  color: white;
+  white-space: nowrap; /* keeps the price in one line */
+  font-family: "Dancing Script", cursive;
+  margin-bottom: -2px;
+}
+
+.detail_content {
+  font-size: 30px;
+  text-align: left;
+  color: LightGray;
+  white-space: nowrap; /* keeps the price in one line */
+}
+
+.detail_price {
+  font-size: 50px;
+  text-align: left;
+  color: orange;
+  white-space: nowrap; /* keeps the price in one line */
+  font-family: "Dancing Script", cursive;
+  margin-top: -8px;
+}
+
+.detail_rate {
+  padding-top: 90px;
+  font-size: 40px;
+  text-align: left;
+  color: orange;
+}
+
+.detail_comment {
+  font-size: 20px;
+  text-align: left;
+  color: white;
+  width: 80%;
+}
+
+.details_btn {
+  background: orange;
+  border-radius: 8px;
+  color: white;
+  font-size: 20px;
+  padding: 12px 28px;
+  margin-right: 20px;
+}
+
+.content_side {
+  width: 65%;
+}
+
+.img_side {
+  width: 500px; /* Set the width of the container */
+  height: 500px; /* Set the height of the container */
+  overflow: hidden; /* Ensures the image does not spill outside the container */
+  display: flex; /* Aligns the img element centrally */
+  justify-content: center;
+  align-items: center;
+}
+
+.img_side img {
+  width: auto; /* Ensure the width and height are set to auto */
+  height: auto; /* to maintain the aspect ratio */
+  min-width: 100%; /* Ensure the image covers the area */
+  min-height: 100%;
+  object-fit: cover; /* Crop and cover the area */
+  border-radius: 10%;
+}
+
+.comments_rate,
+.fa-star {
+  color: orange;
+}
+
+.comments_date {
+  margin-top: -2px;
+  color: white;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.comments_content {
+  margin-top: 4px;
+  color: white;
+  font-size: 24px;
+  width: 120%;
+  line-height: 24px;
+}
+
+.login-sub {
+  background: orange;
+  border-radius: 8px;
+  color: white;
+  font-size: 20px;
+  padding: 12px 28px;
+  margin-right: 20px;
+}
+
+.edit {
+  background-color: #f0ad4e; /* Bootstrap 'warning' color */
+  padding: 5px 10px;
+  margin: 5px;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  font-size: 12px;
+}
+
+.edit:hover {
+  background-color: #ec971f; /* Darker orange */
+}
+
+.comment_edit {
+  backgroud: rgb(64, 64, 64);
+  color: white;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; /* Adjust the space between buttons */
+}
+
+.admin-button {
+  background-color: #ffa500; /* Orange color */
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+  color: white;
+  padding: 15px 30px; /* Padding inside the button */
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.admin-button:hover {
+  background-color: #cc8400; /* Darker orange color on hover */
+}
+
+@media (max-width: 768px) {
+  body {
+    width: 100%;
+  }
+}
